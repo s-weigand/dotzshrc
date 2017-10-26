@@ -7,7 +7,7 @@ target=$USER_HOME
 
 apt-get update && apt-get dist-upgrade -y
 apt-get install zsh
-chsh -s /bin/zsh
+chsh -s /bin/zsh $user
 
 cp -p $DIR/.zshrc $target/.zshrc
 cp -rp $DIR/.rcs $target/.rcs 
