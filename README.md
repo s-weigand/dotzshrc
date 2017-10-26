@@ -9,6 +9,8 @@ My zsh config working with putty and windows
 
 open new shell and all should be done :)
 
+(IF not run `chsh -s /bin/zsh $username` and try again)
+
 ### Windows (putty)
 
 execute `putty_zsh_reg.reg` to set colors for putty
