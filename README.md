@@ -2,7 +2,7 @@
 My zsh config working with putty and windows
 
 ## Installation
-sudo apt-get zsh git 
+sudo apt-get install zsh git
 
 chsh -s /bin/zsh
 
