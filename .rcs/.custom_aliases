@@ -1,0 +1,9 @@
+kgbPiClean () {
+        echo "size before"
+        du -sh /var/www/html/ftp_surveillance/
+        sudo find /var/www/html/ftp_surveillance/ipcam_anmeldung/ -name "*.*" -delete
+        sudo find /var/www/html/ftp_surveillance/kgb-pi_1/ -name "*.*" -delete
+        echo "size after"
+        du -sh /var/www/html/ftp_surveillance/
+        return
+}
