@@ -5,7 +5,7 @@ My zsh config working with putty and windows
 
 ### Linux
 
-`git clone https://github.com/s-weigand/zshrc.git && sudo bash zshrc/install.sh`
+`git clone https://github.com/s-weigand/dotzshrc.git && sudo bash zshrc/install.sh`
 
 open new shell and all should be done :)
 
