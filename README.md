@@ -11,6 +11,8 @@ open new shell and all should be done :)
 
 (If not, run `chsh -s /bin/zsh $username` and try again)
 
+The `.rcs` folder contains a working copy of antigen (https://github.com/zsh-users/antigen)
+
 ### Windows (putty)
 
 execute `putty_zsh_reg.reg` to set colors for putty
