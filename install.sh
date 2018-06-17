@@ -9,6 +9,11 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [ ! -d $USER_HOME/.local/share/fonts ]; then
   mkdir -p $USER_HOME/.local/share/fonts;
 fi
+
+if [ ! -d $USER_HOME/.local/share/fonts/SourceCodePro ]; then
+  mkdir -p $USER_HOME/.local/share/fonts/SourceCodePro;
+fi
+
 cp -p $DIR/SourceCodePro/*.otf $USER_HOME/.local/share/fonts/SourceCodePro/
 fc-cache -f -v
 
