@@ -26,3 +26,5 @@ chsh -s $(grep /zsh$ /etc/shells | tail -1) $user
 cp -p $DIR/.zshrc $USER_HOME/.zshrc
 cp -rp $DIR/.rcs $USER_HOME/.rcs 
 
+# set Berlin as timezone
+timedatectl set-timezone Europe/Berlin
