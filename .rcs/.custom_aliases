@@ -1,1 +1,6 @@
-
+nextcloud_maintenance_on(){
+	sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --on
+}
+nextcloud_maintenance_off(){
+	sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --off
+}
