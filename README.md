@@ -13,6 +13,10 @@ open new shell and all should be done :)
 
 The `.rcs` folder contains a working copy of antigen (https://github.com/zsh-users/antigen)
 
+To update the settings simply run 
+
+`./~/dotzshrc/update.sh` 
+
 ### Windows (putty)
 
 execute `putty_zsh_reg.reg` to set colors for putty

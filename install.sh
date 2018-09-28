@@ -22,9 +22,8 @@ apt-get update && apt-get dist-upgrade -y
 apt-get install zsh -y
 chsh -s $(grep /zsh$ /etc/shells | tail -1) $user
 
-# copy config
-cp -p $DIR/.zshrc $USER_HOME/.zshrc
-cp -rp $DIR/.rcs $USER_HOME/.rcs 
+# call update
+( "$DIR/update.sh" )
 
 # set Berlin as timezone
 timedatectl set-timezone Europe/Berlin
