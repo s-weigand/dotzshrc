@@ -11,6 +11,6 @@ git pull origin master
 
 # copy config
 cp -p $DIR/.zshrc $USER_HOME/.zshrc
-cp -rp $DIR/.rcs $USER_HOME/.rcs
+cp -rp $DIR/.rcs/. $USER_HOME/.rcs/
 
 cd ~
