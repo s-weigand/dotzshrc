@@ -5,7 +5,7 @@ My zsh config working with putty and windows
 
 ### Linux
 
-`git clone https://github.com/s-weigand/dotzshrc.git && sudo bash dotzshrc/install.sh`
+`git clone https://github.com/s-weigand/dotzshrc.git && cd && sudo bash dotzshrc/install.sh`
 
 open new shell and all should be done :)
 
@@ -13,9 +13,9 @@ open new shell and all should be done :)
 
 The `.rcs` folder contains a working copy of antigen (https://github.com/zsh-users/antigen)
 
-To update the settings simply run 
+To update the settings simply run (for this to work it is assumed that you did run the git clone when you where in the home folder) 
 
-`./~/dotzshrc/update.sh` 
+`~/dotzshrc/update.sh` 
 
 ### Windows (putty)
 
