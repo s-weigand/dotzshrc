@@ -1,8 +1,6 @@
 # include z
 # . ~/.rcs/z.sh
 
-source ~/.rcs/antigen.zsh
-
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 # antigen bundle pip

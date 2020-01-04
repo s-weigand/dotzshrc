@@ -11,8 +11,6 @@ open new shell and all should be done :)
 
 (If not, run `chsh -s /bin/zsh $username` and try again)
 
-The `.rcs` folder contains a working copy of antigen (https://github.com/zsh-users/antigen)
-
 To update the settings simply run (for this to work it is assumed that you did run the git clone when you where in the home folder) 
 
 `~/dotzshrc/update.sh` 
