@@ -19,7 +19,7 @@ fc-cache -f -v
 
 # install zsh
 apt-get update && apt-get dist-upgrade -y
-apt-get install zsh zsh-antigen -y
+apt-get install zsh -y
 chsh -s $(grep /zsh$ /etc/shells | tail -1) $user
 
 # call update

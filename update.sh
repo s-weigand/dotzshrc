@@ -13,4 +13,6 @@ git pull origin master
 cp -p $DIR/.zshrc $USER_HOME/.zshrc
 cp -rp $DIR/.rcs/. $USER_HOME/.rcs/
 
+curl -L git.io/antigen > $USER_HOME/.rcs/antigen.zsh
+
 cd ~
