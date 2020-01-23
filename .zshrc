@@ -4,11 +4,13 @@ export TERM="xterm-256color"
 ANACONDA_BIN_DIR=~/anaconda3/bin
 if [ -d "$ANACONDA_BIN_DIR" ]; then
   export PATH="$ANACONDA_BIN_DIR:$PATH"
+  export CONDA_ROOT_DIR=~/anaconda3
 fi
 # use berrycondas python if installed (Raspberry Pi)
 BERRYCONDA_BIN_DIR=~/berryconda3/bin
 if [ -d "$BERRYCONDA_BIN_DIR" ]; then
   export PATH="$BERRYCONDA_BIN_DIR:$PATH"
+  export CONDA_ROOT_DIR=~/berryconda3
 fi
 source ~/.rcs/.zsh_packages
 source ~/.rcs/.powerline9k_style
