@@ -1,6 +1,11 @@
 export TERM="xterm-256color"
 
 # use anacondas python if installed
+ANACONDA_BIN_DIR=~/miniconda3/bin
+if [ -d "$ANACONDA_BIN_DIR" ]; then
+  export PATH="$ANACONDA_BIN_DIR:$PATH"
+  export CONDA_ROOT_DIR=~/anaconda3
+fi
 ANACONDA_BIN_DIR=~/anaconda3/bin
 if [ -d "$ANACONDA_BIN_DIR" ]; then
   export PATH="$ANACONDA_BIN_DIR:$PATH"
