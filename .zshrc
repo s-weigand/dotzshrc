@@ -1,22 +1,35 @@
 export TERM="xterm-256color"
 
+function add_conda_env_dir(){
+  conda_root_dir=`dirname $1`
+  conda_env_dir="echo $conda_root_dir/envs"
+  if [ -d "$conda_env_dir" ] ; then
+    if [ "$(ls -A $conda_env_dir)"]; then
+      export CONDA_ROOT_DIR="$conda_root_dir"
+    fi
+  elif [ -d ~/.conda/envs ];then
+    export CONDA_ROOT_DIR=~/.conda
+  fi
+
+}
+
+function add_conda_dirs(){
+  conda_bin_dir="$1"
+  if [ -d "$conda_bin_dir" ]; then
+    export PATH="$conda_bin_dir:$PATH"
+  fi
+  add_conda_env_dir $conda_bin_dir
+}
+
+# use minicondas python if installed
+add_conda_dirs ~/miniconda3/bin
+
 # use anacondas python if installed
-MINICONDA_BIN_DIR=~/miniconda3/bin
-if [ -d "$MINICONDA_BIN_DIR" ]; then
-  export PATH="$MINICONDA_BIN_DIR:$PATH"
-  export CONDA_ROOT_DIR=~/miniconda3
-fi
-ANACONDA_BIN_DIR=~/anaconda3/bin
-if [ -d "$ANACONDA_BIN_DIR" ]; then
-  export PATH="$ANACONDA_BIN_DIR:$PATH"
-  export CONDA_ROOT_DIR=~/anaconda3
-fi
+add_conda_dirs ~/anaconda3/bin
+
 # use berrycondas python if installed (Raspberry Pi)
-BERRYCONDA_BIN_DIR=~/berryconda3/bin
-if [ -d "$BERRYCONDA_BIN_DIR" ]; then
-  export PATH="$BERRYCONDA_BIN_DIR:$PATH"
-  export CONDA_ROOT_DIR=~/berryconda3
-fi
+add_conda_dirs ~/berryconda3/bin
+
 source ~/.rcs/.zsh_packages
 source ~/.rcs/.powerline9k_style
 source ~/.rcs/.custom_aliases
