@@ -15,8 +15,8 @@ function add_conda_env_dir(){
 
 function add_conda_dirs(){
   conda_bin_dir="$1"
-  if [ -d "$conda_bin_dir" ]; then
-    export PATH="$conda_bin_dir:$PATH"
+  if [[ -d "$conda_bin_dir" && ! :$PATH: == *:"$conda_bin_dir":* ]]; then
+      export PATH="$conda_bin_dir:$PATH"
   fi
   add_conda_env_dir $conda_bin_dir
 }
