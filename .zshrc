@@ -2,9 +2,9 @@ export TERM="xterm-256color"
 
 function add_conda_env_dir(){
   conda_root_dir=`dirname $1`
-  conda_env_dir="echo $conda_root_dir/envs"
+  conda_env_dir="$conda_root_dir/envs"
   if [ -d "$conda_env_dir" ] ; then
-    if [ "$(ls -A $conda_env_dir)"]; then
+    if [ "$(ls -A $conda_env_dir)" ]; then
       export CONDA_ROOT_DIR="$conda_root_dir"
     fi
   elif [ -d ~/.conda/envs ];then
