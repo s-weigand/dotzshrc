@@ -14,6 +14,9 @@ if [ ! -d $USER_HOME/.local/share/fonts/MesloLGS_NF ]; then
   mkdir -p $USER_HOME/.local/share/fonts/MesloLGS_NF;
 fi
 
+# call download fonts
+( "$DIR/download_fonts.sh" )
+
 cp -p $DIR/MesloLGS_NF/*.ttf $USER_HOME/.local/share/fonts/MesloLGS_NF/
 fc-cache -f -v
 
