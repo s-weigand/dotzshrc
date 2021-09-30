@@ -10,11 +10,11 @@ if [ ! -d $USER_HOME/.local/share/fonts ]; then
   mkdir -p $USER_HOME/.local/share/fonts;
 fi
 
-if [ ! -d $USER_HOME/.local/share/fonts/SourceCodePro ]; then
-  mkdir -p $USER_HOME/.local/share/fonts/SourceCodePro;
+if [ ! -d $USER_HOME/.local/share/fonts/MesloLGS_NF ]; then
+  mkdir -p $USER_HOME/.local/share/fonts/MesloLGS_NF;
 fi
 
-cp -p $DIR/SourceCodePro/*.otf $USER_HOME/.local/share/fonts/SourceCodePro/
+cp -p $DIR/MesloLGS_NF/*.ttf $USER_HOME/.local/share/fonts/MesloLGS_NF/
 fc-cache -f -v
 
 # install zsh

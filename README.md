@@ -19,7 +19,7 @@ To update the settings simply run (for this to work it is assumed that you did r
 
 execute `putty_zsh_reg.reg` to set colors for putty
 
-install the Font `SourceCodePro` (taken from this awesome project https://github.com/powerline/fonts)
+install the Font `MesloLGS NF` (run `download_fonts.sh` and install the fonts in the `MesloLGS_NF` folder)
 
 in putty you might need to change the font again (`Change Settings...->Category->Window->Appearance->Change...`)
 
