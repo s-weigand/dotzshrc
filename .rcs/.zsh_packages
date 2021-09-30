@@ -27,7 +27,7 @@ antigen bundle trapd00r/zsh-syntax-highlighting-filetypes
 antigen bundle zuxfoucault/colored-man-pages_mod
 
 
-antigen theme bhilburn/powerlevel9k 
+antigen theme romkatv/powerlevel10k
 
 antigen use oh-my-zsh
 
