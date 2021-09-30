@@ -15,6 +15,10 @@ To update the settings simply run (for this to work it is assumed that you did r
 
 `~/dotzshrc/update.sh` 
 
+If you had `powerlevel9k` installed you should also run `antigen cleanup` after updating.
+This config changed from [`powerlevel9k`](https://github.com/Powerlevel9k/powerlevel9k) to [`powerlevel10k`](https://github.com/romkatv/powerlevel10k),
+which are'n compatible.
+
 ### Windows (putty)
 
 execute `putty_zsh_reg.reg` to set colors for putty
