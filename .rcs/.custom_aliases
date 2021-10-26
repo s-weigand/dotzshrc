@@ -1,6 +1,8 @@
 alias ll='ls -lah'
 alias ..='cd ..'
 alias sa='source activate'
+alias pa='pre-commit run -a'
+alias dc='docker-compose'
 nextcloud_maintenance_on(){
 	sudo -u www-data php /var/www/nextcloud/occ maintenance:mode --on
 }
