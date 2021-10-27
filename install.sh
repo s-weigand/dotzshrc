@@ -20,9 +20,9 @@ fi
 cp -p $DIR/MesloLGS_NF/*.ttf $USER_HOME/.local/share/fonts/MesloLGS_NF/
 fc-cache -f -v
 
-# install zsh
+# install zsh and curl
 apt-get update && apt-get dist-upgrade -y
-apt-get install zsh -y
+apt-get install zsh curl -y
 chsh -s $(grep /zsh$ /etc/shells | tail -1) $user
 
 # call update
