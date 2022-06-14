@@ -17,7 +17,7 @@ antigen bundle perms
 # antigen bundle pylint
 
 # Syntax highlighting bundle.
-antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle z-shell/F-Sy-H@main
 # antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle rupa/z
 antigen bundle zsh-users/zsh-autosuggestions
